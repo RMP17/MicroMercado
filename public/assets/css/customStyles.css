@@ -1,0 +1,189 @@
+/* 
+#F5E005
+#8B8B80
+#F4A103
+#F07403
+#EF4602 */
+body {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    padding-top: 45px;
+    padding-left: 110px;
+    
+}
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+/* Color temas */
+.theme, .sidenav{
+    background: #346a6d !important;
+}
+.sidenav{
+    background: #346a6d !important;
+}
+.theme-black > .collapse > .navbar-nav > .nav-item > a:not(.active), .navbar-brand, .nav-link {
+    color: white !important;
+}
+.nav-link.active.show {
+    background: white;
+    color: #346a6d !important;
+}
+.nav-item .active, .navbar-brand.active {
+    background: rgba(255,234,0,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,234,0,1) 0%, rgba(255,234,0,1) 42%, rgba(255,153,0,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,234,0,1)), color-stop(42%, rgba(255,234,0,1)), color-stop(100%, rgba(255,153,0,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,234,0,1) 0%, rgba(255,234,0,1) 42%, rgba(255,153,0,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,234,0,1) 0%, rgba(255,234,0,1) 42%, rgba(255,153,0,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,234,0,1) 0%, rgba(255,234,0,1) 42%, rgba(255,153,0,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,234,0,1) 0%, rgba(255,234,0,1) 42%, rgba(255,153,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffea00', endColorstr='#ff9900', GradientType=1 );
+    
+    color: black !important;
+    /* box-shadow: 0 0 20px 0px black; */
+}
+
+.blog-header {
+    line-height: 1;
+}
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+/*=============================*/
+
+.sidenav {
+    background-color: #343a40;
+    height: 100vh; /* Full-height: remove this if you want "auto" height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    padding-top: 40px;
+    width: 7rem;
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.link-diabled{
+    pointer-events: none;
+    opacity: 0;
+}
+.nav-item .active-sidebar {
+    color: whitesmoke;
+}
+.margin-top-1{
+    margin-top: 1rem;
+}
+.bar-code{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.hidden{
+    visibility: hidden;
+}
+.size-icons-13{
+    text-align: center;
+    width: 1.5rem;
+    font-size: 12px;
+    top: 0 !important;
+}
+.size-icons{
+    text-align: center;
+    width: 2rem;
+    top: 0.2rem !important;
+}
+.cursor{
+    cursor: pointer;
+}
+.table thead.center th {
+    text-align: center;
+    vertical-align: top;
+}
+.table tbody.border tr td {
+    border-left: 1px solid grey;
+    text-align: center;
+}
+.focus-none{
+    border: 0;
+    color: white;
+}.focus-none:focus{
+    box-shadow: none;
+    color: rgba(1,1,1,0.08);
+}
+
+.section-to-print {
+    display: none;
+
+}
+a.disabled {
+    /* Make the disabled links grayish*/
+    color: gray;
+    /* And disable the pointer events */
+    pointer-events: none;
+}
+
+/*@page {
+    size: 356mm 216mm;
+}*/
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .section-to-print, .section-to-print * {
+        visibility: visible;
+    }
+    .section-to-print {
+        display: block!important;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    /*css para impresion*/
+    .hoja{
+        width: 8cm;
+        padding: 2mm;
+        font-family: sans-serif;
+        font-size: 9pt;
+    }
+    .table thead.center-im th {
+        text-align: center;
+        vertical-align: top;
+        padding: 0;
+    }
+    .table tbody.center-im tr td {
+        text-align: center;
+        padding: 0;
+    }
+    /*#myPrintArea {
+        page-break-inside: avoid!important;
+        zoom: 85%;
+    }*/
+    /*table {page-break-inside: avoid;!important;}*/
+}
+
+.textarea-read[readonly] {
+    background-color: white !important;
+}
+ /*navbar icons*/
+.nav > .nav-link {
+    display: block;
+    padding: .45rem 0 0 0;
+    line-height: 1;
+}
+.nav > .nav-link > i {
+    width: 100%;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+}
